@@ -1,0 +1,46 @@
+.works{
+  background-image: url('../images/Works.jpg');
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+  @include media-mx(1000) {
+    width: 480px;
+    height: 320px;
+  }
+  @include media-mx(680) {
+    width: 250px;
+    height: 198px;
+  }
+}
+.swiper_container {
+  width: 100%;
+  padding: rem(64) 0 rem(128) 0;
+  position: relative;
+}
+.swiper-container-prev{
+  width: rem(60);
+  height: rem(60);
+  border: 1px solid #292F36;
+  border-radius: 100px;
+  background: #292F36;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container-next{
+  width: rem(60);
+  height: rem(60);
+  border: 1px solid #292F36;
+  border-radius: 100px;
+  background: #292F36;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
