@@ -5,6 +5,8 @@
 */
 @import 'config/fonts';
 
+@import 'config/icons';
+
 /** Подключение переменных */
 @import 'config/vars';
 
@@ -23,7 +25,7 @@
 * раскомментировать для использования
 */
 // @import 'libs/aos';
-// @import 'libs/swiper';
+@import 'libs/swiper';
 
 /**
 * Подключение custom scrollbar для всего сайта
@@ -44,6 +46,11 @@
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
+@import 'components/cart';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/works';
+@import 'components/contact';
 @import 'components/popup';
 @import 'components/checkbox';
 @import 'components/tabs';
