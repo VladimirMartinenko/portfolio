@@ -1,24 +1,24 @@
-$mainOffset: 15; // отступы безопасности для контейнера
+$mainOffset: 128; // отступы безопасности для контейнера
 $maxWidth: 1920; // максимальная ширина страницы
 $minWidth: 320; // минимальная ширина телефона
-$containerWidth: 1160; // ширина контейнера из макета
+$containerWidth: 1920; // ширина контейнера из макета
 $maxWidthContainer: $containerWidth + ($mainOffset * 2); // ширина контейнера с учетом padding слева и справа
 
-$headerHeight: 100;
-$footerHeight: 100;
+$headerHeight: 170;
+$footerHeight: 48;
 
 :root {
-  --bs-font-family: 'Inter', sans-serif; // Семейство шрифта по умолчанию
+  --bs-font-family: 'IBMPlexMono', sans-serif; // Семейство шрифта по умолчанию
   --bs-font-size: 16px; // Размер шрифта по умолчанию
   --bs-font-weight: 400; // Жирность шрифта по умолчанию
   --bs-line-height: 1; // Базовая высота шрифта
-  --bs-font-color: #222; // Цвет шрифта по умолчанию
+  --bs-font-color: #fff; // Цвет шрифта по умолчанию
   --bs-transition: .3s ease-in-out;
   --bs-radius: 10px;
 
-  --primary-color: #131313;
-  --primary-hover-color: #2d2d2d;
-  --secondary-color: #ff4040;
+  --primary-color: #12F7D6;
+  --primary-hover-color: #12F7D6;
+  --secondary-color: #292F36;
   --white-color: #fff;
   --black-color: #131313;
 
