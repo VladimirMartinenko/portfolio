@@ -42,6 +42,9 @@
       color: var(--white-color);
       background: var(--secondary-color);
       text-align: center;
+      transform: translate(0px,120%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
       @include media-mx(1700) {
         font-size: rem(64);
       }
@@ -67,3 +70,12 @@
     }
   }
 }
+  .active{
+    transform: translate(0px, 0px) !important;
+    opacity: 1 !important;
+  }
+
+  // .active &{
+  //   border-bottom: 1px solid var(--primary-color);
+  //   color: var(--primary-color);
+  // }
