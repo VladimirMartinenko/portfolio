@@ -19,15 +19,17 @@
     color:#98FAEC;
     font-size: 100px;
     margin-bottom: rem(64);
+    transform: translate(0px,120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
     @include media-mx(768) {
      display: none;
     }
   }
   &__wraper-ibg{
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     margin-bottom: rem(16);
-
   }
   &__img{
     border: 1px solid var(--primary-color);
@@ -94,9 +96,9 @@
     height: rem(56);
     border:1px solid var(--secondary-color) ;
     border-radius: 32px;
+    color: var(--black-color);
   }
 }
-
 .letter{
   font-family: IBMPlexMono;
   font-size: rem(16);

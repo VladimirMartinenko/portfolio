@@ -6,19 +6,23 @@
   <body>
     <div class="wrapper">
       @@include('html/header.html')
-      @@include('html/cart.html')
 
       <main class="page">
+        <div data-observ></div>
 
         <!-- <div class="page__container"> -->
+          @@include('html/cart.html')
           @@include('html/about.html')
           @@include('html/skills.html')
           @@include('html/works.html')
           @@include('html/contact.html')
-
+        <!-- </div> -->
       </main>
 
       @@include('html/footer.html')
     </div>
+    @@include('html/popupExample.html')
   </body>
-</html>
+</html> 
+
+

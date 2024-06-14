@@ -7,10 +7,6 @@
   width: 100%;
   transition: background-color var(--bs-transition);
   z-index: 50;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   @include media-mx(768) {
     font-size: 24px;
     line-height: 32px;
@@ -20,11 +16,12 @@
     line-height: 20px;
   }
 
-  // .header-is-sticky & {
-  //   // ..стили для липкого хедера
-  //   position: fixed;
-  //   background-color: #007aff;
-  // }
+  .header-is-sticky & {
+    // ..стили для липкого хедера
+    position: fixed;
+    background-color: #292F36;
+    opacity: 0.8;
+  }
 
   // .header__container
   &__container {
@@ -34,11 +31,10 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #43454D;
-   
 
-    // .header-is-sticky & {
-    //   height: rem($headerHeight - 50);
-    // }
+    .header-is-sticky & {
+      height: rem($headerHeight - 50);
+    }
   }
   &__logo {
     color: #FFFFFF;
@@ -51,18 +47,6 @@
   align-items: center;
   justify-content: space-between;
   gap: rem(32);
- 
-  // width: rem(855);
-  // @include media-mx(1280) {
-  //   width: rem(618);
-  //  };
-   
-  // @include media-mx(768) {
-  //   width: rem(391);
-  //  };
-  // @include media-mx(390) {
-  //   width: rem(139);
-  //  };
   }
 
 .logo {
@@ -81,14 +65,6 @@
   @include media-mx(430) {
     gap: rem(17);
   }
-  // &_icon{
-  //   display:flex;
-  //   align-items: center;
-  //   gap:30px;
-  //   @include media-mx(610) {
-  //     display: none
-  //    };
-  // }
 }
 .menu__item{
   display:flex;
@@ -107,14 +83,12 @@
 }
 .menu__link:hover{
   color:var(--primary-color);
-  text-shadow: 0 0 10px ;
 }
 .search-form {
   position: relative;
   width: 204px;
   height: 32px;
   border-radius: 24px;
-  /* box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); */
   transform: translate(0%, 0%);
   background: #F9FBFF;
   transition: all 0.3s ease;
@@ -188,6 +162,20 @@
   cursor: pointer;
 }
 
+
+// .active ~ .about_icon{
+//   border-bottom: 1px solid var(--primary-color);
+//     color: var(--primary-color);
+// }
+
+
+// .about_icon{
+//   .active &{
+//     border-bottom: 1px solid var(--primary-color);
+//     color: var(--primary-color);
+//   }
+
+// }
 // .link{
 //   color: #FFFFFF;
 //   padding-bottom: 16px;
