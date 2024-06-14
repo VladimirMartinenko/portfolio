@@ -79,7 +79,8 @@ form button{
   color: var(--black-color);
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.5s;
+  transform: rotate3d(100,1,1,100deg);
+  transition: 1s;
 }
 form button:hover{
   box-shadow: 0 0 10px var(--primary-color);
